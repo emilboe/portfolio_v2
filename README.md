@@ -1,8 +1,4 @@
-# MMFIN.의 웹 포트폴리오
-
-## 미리보기
-
-![미리보기](./src/images/popol.png)
+# Emil Bøens Portfolio
 
 **링크** :
 <https://hubblin.github.io/>
