@@ -1,7 +1,7 @@
 $color-bg: #efeeee;
 $color-shadow: #b6b4b4;
 $color-white: #fff;
-$color-red: #ae1100;
+$color-pink: rgb(255, 85, 124, 1);
 $ruler: 16px;
 .footer-section {
   background-color: rgb(112, 112, 112);
@@ -16,14 +16,28 @@ $ruler: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     height: 80px;
 
     .topButton {
       border: none;
+      cursor: pointer;
       background: none;
       color: white;
       font-size: 25px;
       font-weight: bold;
+      transition: all 0.2s;
+      &:hover {
+        color: $color-pink;
+        transform: scale(110%);
+      }
+    }
+    a {
+      transition: all 0.2s;
+      &:hover {
+        box-shadow: 0 0 10px $color-pink;
+        border-radius: 50%;
+      }
     }
   }
 }

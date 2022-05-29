@@ -1,6 +1,7 @@
-$color-bg: #efeeee;
+$color-bg: #202023;
 $color-shadow: #babecc;
 $color-white: #fff;
+$color-black: rgb(0, 0, 0);
 $color-red: #ae1100;
 $ruler: 16px;
 * {
@@ -13,7 +14,7 @@ html {
   z-index: -3;
   background-color: $color-bg;
   box-sizing: border-box;
-  word-break: break-all;
+  word-break: normal;
 }
 
 body,
@@ -30,7 +31,7 @@ button {
 div,
 p {
   color: $color-shadow;
-  text-shadow: 1px 1px 1px $color-white;
+  text-shadow: 1px 1px 1px $color-black;
 }
 
 form {

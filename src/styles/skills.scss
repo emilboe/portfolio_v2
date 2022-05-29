@@ -1,6 +1,8 @@
-$color-bg: #efeeee;
-$color-shadow: #b6b4b4;
-$color-white: #fff;
+$color-shadow: hsl(240, 4%, 10%);
+$color-shadowStrong: hsl(240, 4%, 5%);
+$color-white: hsl(240, 4%, 15%);
+$color-whiteStrong: hsl(240, 4%, 20%);
+$color-pink: rgb(255, 85, 124);
 $color-red: #ae1100;
 $ruler: 16px;
 .skills-section {
@@ -18,18 +20,20 @@ $ruler: 16px;
       justify-content: center;
       .skill-group {
         .skill {
+          background: rgb(11, 11, 11);
+          background: linear-gradient(315deg, $color-shadow 0%, $color-white 100%);
           width: 100px;
           height: 100px;
           margin: 20px;
           box-sizing: border-box;
-          box-shadow: -4px -4px 13px $color-white, 4px 4px 13px $color-shadow;
+          box-shadow: -4px -4px 13px $color-whiteStrong, 4px 4px 13px $color-shadowStrong;
           display: flex;
           justify-content: center;
           align-items: center;
           border-radius: 10px;
         }
         .skill-info {
-          color: rgb(51, 51, 51);
+          color: rgb(204, 204, 204);
           text-align: center;
         }
       }

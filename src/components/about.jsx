@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import "../styles/about.scss";
-import img from "../images/myficture.jpg";
+import img from "../images/emilboe.png";
 
 import {
   IoPerson,
@@ -18,38 +18,40 @@ const About = memo(({ refs }) => {
         <img
           className="about-picture"
           src={img}
-          alt="이미지 불러오기를 실패했습니다."
+          alt="Selfie of Emil."
         ></img>
         <div className="about-info">
-          <b className="info-title">"디테일은 퀄리티다"</b>
+          <b className="info-title">"Me, Myself & I"</b>
           <div className="info">
             <br />
-            안녕하세요. 끊임없는 성장을 추구하는 열정이 있는 개발자 임호균
-            입니다. 새로운 기능을 배우고 재미있는 아이디어로 여러 개발을 하는
-            것을 좋아합니다. 컴퓨터 공학부에 재학 중이며 프론트엔드 개발자를
-            지망하고 있습니다. '디테일은 퀄리티다' 라는 말처럼 꼼꼼하게 확인하고
-            놓친 부분은 없는지 다시 한 번 확인하며 퀄리티 높은 작품을 만들고
-            수정과 개선에 두려움없이 도전하는 개발자가 되겠습니다.
+            I'm a Front-End Developer based in Norway.
+            I have a passion for creative webdesign and making intuitive, dynamic user experiences.
+            <br /><br />
+            I see myself as a problem solver and creative thinker with high attention to detail.
+            Fan of Japan, esports, watching netflix and blogging. My mom says I'm cool.
+            <br /><br />
+            I strive to challenge myself without the fear of
+            Interested in the entire frontend spectrum for creating useful projects with positive people.
           </div>
           <ul>
             <li>
               <div className="info-li">
-                <IoPerson className="icon" /> 임호균
+                <IoPerson className="icon" /> Emil Bøen
               </div>
             </li>
             <li>
               <div className="info-li">
-                <IoLocationSharp className="icon" /> 부산광역시 중구
+                <IoLocationSharp className="icon" /> Gjøvik, Norway
               </div>
             </li>
             <li>
               <div className="info-li">
-                <IoMailSharp className="icon" /> lhkworld16@gmail.com
+                <a href="mailto:emil@boen.net"><IoMailSharp className="icon" /> emil@boen.net</a>
               </div>
             </li>
             <li>
               <div className="info-li">
-                <IoCalendarClearOutline className="icon" /> 1997.03.10
+                <IoCalendarClearOutline className="icon" /> 05.10.1996
               </div>
             </li>
           </ul>
