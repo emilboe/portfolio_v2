@@ -2,6 +2,7 @@ import React, { useCallback, useState, memo } from "react";
 import "../styles/navbar.scss";
 
 import { MdMenu } from "react-icons/md";
+import logo from "../images/eb.png";
 
 const Navbar = memo(({ handleScroll }) => {
   const [active, setActive] = useState(false);
@@ -14,7 +15,8 @@ const Navbar = memo(({ handleScroll }) => {
     <>
       <header>
         <nav className="navbar">
-          <div className="navbar__logo">Emil B.</div>
+          <div className="navbar__logo">
+              <img src={logo} alt="Branding screenshots of Hamle." />Emil Bøen</div>
 
           <ul className="navbar__menu">
             <li>
