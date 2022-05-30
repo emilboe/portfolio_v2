@@ -4,7 +4,6 @@ import "../styles/skills.scss";
 
 import {
   ReactJs,
-  Redux,
   Firebase,
   Sass,
   Javascript,
@@ -13,7 +12,6 @@ import {
   Nodedotjs,
   Express,
   Mysql,
-  R,
   Mongodb,
 } from "@icons-pack/react-simple-icons";
 
