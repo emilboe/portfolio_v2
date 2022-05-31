@@ -1,0 +1,76 @@
+$color-shadow: hsl(240, 4%, 10%);
+$color-shadowStrong: hsl(240, 4%, 5%);
+$color-white: hsl(240, 4%, 15%);
+$color-whiteStrong: hsl(240, 4%, 20%);
+$color-pink: rgb(255, 85, 124);
+$color-red: #ae1100;
+$ruler: 16px;
+.project-container {
+  max-width: 80%;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  h1 {
+    font-size: 3rem;
+  }
+  p,
+  img {
+    max-width: 80%;
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+  .button-group {
+    display: flex;
+    gap: 1rem;
+  }
+  .button {
+    box-shadow: -4px -4px 13px $color-whiteStrong, 4px 4px 13px $color-shadowStrong;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    color: azure;
+    font-weight: bold;
+    &:hover {
+      box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+      color: $color-pink;
+    }
+    &:active {
+      box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+    }
+  }
+  .cover-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tech-stack {
+    display: flex;
+    gap: 1rem;
+  }
+  .skill-group {
+    .skill {
+      background: rgb(11, 11, 11);
+      background: linear-gradient(315deg, $color-shadow 0%, $color-white 100%);
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      box-sizing: border-box;
+      box-shadow: -4px -4px 13px $color-whiteStrong, 4px 4px 13px $color-shadowStrong;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+    }
+    .skill-info {
+      color: rgb(204, 204, 204);
+      text-align: center;
+    }
+  }
+}
