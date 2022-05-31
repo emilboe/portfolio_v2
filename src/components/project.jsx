@@ -10,16 +10,12 @@ import {
     ReactJs,
     Firebase,
     Sass,
-    Figma,
     Express,
     Nodedotjs,
     Adobephotoshop,
     Heroku,
     Netlify,
     Adobexd,
-    Javascript,
-    Html5,
-    CssThree,
     Mongodb
 } from "@icons-pack/react-simple-icons";
 

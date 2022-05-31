@@ -2,8 +2,7 @@ import React, { useRef } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import './App.scss';
 import Navbar from './components/navbar';
