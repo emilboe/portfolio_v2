@@ -9,7 +9,9 @@ $ruler: 16px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 120px;
-
+    a {
+      text-decoration: none;
+    }
     .portfolio-info-area {
       min-height: 200px;
       flex-basis: 50%;
@@ -49,13 +51,14 @@ $ruler: 16px;
           }
         }
         .title {
-          margin-top: 285px;
+          margin: 290px 0 10px 0;
           font-size: 30px;
           font-weight: bold;
-          color: rgb(233, 157, 220);
+          color: $color-pink;
         }
         .contents {
-          color: rgb(255, 255, 255);
+          line-height: 1.5rem;
+          color: white;
         }
 
         .button {

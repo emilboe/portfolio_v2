@@ -30,8 +30,8 @@ const About = memo(({ refs }) => {
             I see myself as a problem solver and creative thinker with high attention to detail.
             Fan of Japan, esports, watching netflix and blogging. My mom says I'm cool.
             <br /><br />
-            I strive to challenge myself without the fear of
-            Interested in the entire frontend spectrum for creating useful projects with positive people.
+            I strive to challenge myself without the fear of making mistakes. 
+            Interested in working with the entire frontend spectrum to create useful projects with positive people.
           </div>
           <ul>
             <li>

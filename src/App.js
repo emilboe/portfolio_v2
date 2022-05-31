@@ -1,4 +1,10 @@
-import React, { useRef} from 'react';
+import React, { useRef } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 import './App.scss';
 import Navbar from './components/navbar';
 import About from './components/about';
@@ -6,6 +12,7 @@ import Title from './components/title';
 import Skills from './components/skills';
 import Portfolio from './components/portfolio';
 import Footer from './components/footer';
+import Project from './components/project';
 
 
 function App() {
@@ -15,7 +22,7 @@ function App() {
   // const handleFollow = () => {
   //   setScrollY(window.pageYOffset);
   // }
-  
+
 
   // useEffect(() => {
   //   const watch = () => {
@@ -31,11 +38,11 @@ function App() {
     let Top = 0;
     if (myTop === 'about') {
       Top = aboutRef.current.offsetTop - 60;
-    } else if(myTop === 'skills'){
+    } else if (myTop === 'skills') {
       Top = skillsRef.current.offsetTop - 60;
     } else if (myTop === 'portfolio') {
-      Top = portfolioRef.current.offsetTop -60;
-    } 
+      Top = portfolioRef.current.offsetTop - 60;
+    }
     window.scrollTo({
       top: Top,
       behavior: "smooth"
@@ -44,16 +51,31 @@ function App() {
   }
 
   return (
-    <>
-      <Navbar handleScroll={ handleScroll}/>
-      <Title/>
-      <div className="container">
-        <About refs={ aboutRef}/>
-        <Skills refs={ skillsRef}/>
-        <Portfolio refs={ portfolioRef}/>
-      </div>
-      <Footer handleScroll={handleScroll}/>
-    </>
+    <Router>
+
+      <Routes>
+        <Route path="/project/:id" element={
+          <>
+            <Navbar hideButtons={true} handleScroll={handleScroll} />
+            <Project handleScroll={handleScroll}/>
+          </>
+        } />
+
+        <Route path="/" element={
+          <>
+            <Navbar hideButtons={false} handleScroll={handleScroll} />
+            <Title />
+            <div className="container">
+              <About refs={aboutRef} />
+              <Skills refs={skillsRef} />
+              <Portfolio refs={portfolioRef} />
+            </div>
+          </>
+        } />
+      </Routes>
+
+      <Footer handleScroll={handleScroll} />
+    </Router>
   );
 }
 

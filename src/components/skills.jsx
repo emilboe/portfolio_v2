@@ -11,8 +11,11 @@ import {
   CssThree,
   Nodedotjs,
   Express,
-  Mysql,
+  Figma,
   Mongodb,
+  Heroku,
+  Netlify,
+  Adobexd
 } from "@icons-pack/react-simple-icons";
 
 const Skills = memo(({ refs }) => {
@@ -20,7 +23,7 @@ const Skills = memo(({ refs }) => {
     <section ref={refs} className="skills-section">
       <div className="section-title">SKILLS</div>
       <div className="skills-content">
-        
+
         <h3 className="skill-title">Frontend</h3>
         <div className="skills-infos">
           <div className="skill-group">
@@ -53,6 +56,18 @@ const Skills = memo(({ refs }) => {
             </div>
             <p className="skill-info">React.js</p>
           </div>
+          <div className="skill-group">
+            <div className="skill">
+              <Figma color="white" size={50} />
+            </div>
+            <p className="skill-info">Figma</p>
+          </div>
+          <div className="skill-group">
+            <div className="skill">
+              <Adobexd color="#ff61f6" size={50} />
+            </div>
+            <p className="skill-info">Adobe XD</p>
+          </div>
         </div>
 
         <h3 className="skill-title">Backend</h3>
@@ -75,21 +90,24 @@ const Skills = memo(({ refs }) => {
             </div>
             <p className="skill-info">Firebase</p>
           </div>
-        </div>
-
-        <h3 className="skill-title">Data</h3>
-        <div className="skills-infos">
-          <div className="skill-group">
-            <div className="skill">
-              <Mysql color="#4479A1" size={50} />
-            </div>
-            <p className="skill-info">My-SQL</p>
-          </div>
           <div className="skill-group">
             <div className="skill">
               <Mongodb color="#47A248" size={50} />
             </div>
             <p className="skill-info">MongoDB</p>
+          </div>
+
+          <div className="skill-group">
+            <div className="skill">
+              <Heroku color="RebeccaPurple" size={50} />
+            </div>
+            <p className="skill-info">Heroku</p>
+          </div>
+          <div className="skill-group">
+            <div className="skill">
+              <Netlify color="#00AD9F" size={50} />
+            </div>
+            <p className="skill-info">Netlify</p>
           </div>
         </div>
       </div>
