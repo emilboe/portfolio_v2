@@ -15,11 +15,13 @@ const About = memo(({ refs }) => {
       <div className="section-title">ABOUT ME</div>
 
       <div className="about-content">
-        <img
-          className="about-picture"
-          src={img}
-          alt="Selfie of Emil."
-        ></img>
+        <div className="picture-wrap">
+          <img
+            className="about-picture"
+            src={img}
+            alt="Selfie of Emil."
+          ></img>
+        </div>
         <div className="about-info">
           <b className="info-title">"Me, Myself & I"</b>
           <div className="info">
@@ -30,7 +32,7 @@ const About = memo(({ refs }) => {
             I see myself as a problem solver and creative thinker with high attention to detail.
             On a personal note I am a fan of Japan, esports, watching netflix and blogging. Also my mom says I'm cool.
             <br /><br />
-            I strive to challenge myself without the fear of making mistakes. 
+            I strive to challenge myself without the fear of making mistakes.
             Interested in working with the entire frontend spectrum to create useful projects with positive people.
           </div>
           <ul>
