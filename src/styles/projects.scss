@@ -54,23 +54,28 @@ $ruler: 16px;
     display: flex;
     gap: 1rem;
   }
-  .skill-group {
-    .skill {
-      background: rgb(11, 11, 11);
-      background: linear-gradient(315deg, $color-shadow 0%, $color-white 100%);
-      width: 100px;
-      height: 100px;
-      margin: 20px;
-      box-sizing: border-box;
-      box-shadow: -4px -4px 13px $color-whiteStrong, 4px 4px 13px $color-shadowStrong;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 10px;
-    }
-    .skill-info {
-      color: rgb(204, 204, 204);
-      text-align: center;
+  .skills-infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .skill-group {
+      .skill {
+        background: rgb(11, 11, 11);
+        background: linear-gradient(315deg, $color-shadow 0%, $color-white 100%);
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        box-sizing: border-box;
+        box-shadow: -4px -4px 13px $color-whiteStrong, 4px 4px 13px $color-shadowStrong;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+      }
+      .skill-info {
+        color: rgb(204, 204, 204);
+        text-align: center;
+      }
     }
   }
 }

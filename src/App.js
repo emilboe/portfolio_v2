@@ -12,6 +12,7 @@ import Skills from './components/skills';
 import Portfolio from './components/portfolio';
 import Footer from './components/footer';
 import Project from './components/project';
+import ScrollToTop from './components/scrollToTop';
 
 
 function App() {
@@ -55,8 +56,9 @@ function App() {
       <Routes>
         <Route path="/project/:id" element={
           <>
+            <ScrollToTop />
             <Navbar hideButtons={true} handleScroll={handleScroll} />
-            <Project handleScroll={handleScroll}/>
+            <Project handleScroll={handleScroll} />
           </>
         } />
 

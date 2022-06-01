@@ -24,11 +24,11 @@ const About = memo(({ refs }) => {
           <b className="info-title">"Me, Myself & I"</b>
           <div className="info">
             <br />
-            I'm a Front-End Developer based in Norway.
-            I have a passion for creative webdesign and making intuitive, dynamic user experiences.
+            I recently graduated with a bachelor's degree in web development from the Norwegian University of Science and Technology.
+            I have always had a passion for creative webdesign and making intuitive, dynamic user experiences.
             <br /><br />
             I see myself as a problem solver and creative thinker with high attention to detail.
-            Fan of Japan, esports, watching netflix and blogging. My mom says I'm cool.
+            On a personal note I am a fan of Japan, esports, watching netflix and blogging. Also my mom says I'm cool.
             <br /><br />
             I strive to challenge myself without the fear of making mistakes. 
             Interested in working with the entire frontend spectrum to create useful projects with positive people.

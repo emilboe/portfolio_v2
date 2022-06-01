@@ -77,7 +77,7 @@ const Project = memo(({ handlescroll }) => {
             </div>
             <p>{info}</p>
             <h2>Tech Stack</h2>
-            <div className="tech-stack">
+            <div className="skills-infos">
                 {id === "hamle" &&
                     <>
                         <div className="skill-group">

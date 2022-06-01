@@ -24,7 +24,7 @@ const Navbar = memo(({ handleScroll, hideButtons }) => {
           {hideButtons ?
             <ul className="navbar__menu">
               <li>
-              <Link to="/"><button>Go Back</button></Link>
+                <Link to="/"><button>Go Back</button></Link>
               </li>
             </ul>
             :
@@ -51,38 +51,54 @@ const Navbar = memo(({ handleScroll, hideButtons }) => {
       {
         active && (
           <div className="toggle__menu">
-            <ul>
-              <li>
-                <button
-                  onClick={() => {
-                    handleScroll("about");
-                    click();
-                  }}
-                >
-                  About me
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => {
-                    handleScroll("skills");
-                    click();
-                  }}
-                >
-                  Skills
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => {
-                    handleScroll("portfolio");
-                    click();
-                  }}
-                >
-                  Portfolio
-                </button>
-              </li>
-            </ul>
+            {hideButtons ?
+              <ul className="navbar__menu">
+                <li>
+                  <Link to="/">
+                    <button
+                      onClick={() => {
+                        click();
+                      }}
+                    >
+                      Go Back
+                    </button>
+                  </Link>
+                </li>
+              </ul>
+              :
+              <ul>
+                <li>
+                  <button
+                    onClick={() => {
+                      handleScroll("about");
+                      click();
+                    }}
+                  >
+                    About me
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => {
+                      handleScroll("skills");
+                      click();
+                    }}
+                  >
+                    Skills
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => {
+                      handleScroll("portfolio");
+                      click();
+                    }}
+                  >
+                    Portfolio
+                  </button>
+                </li>
+              </ul>
+            }
           </div>
         )
       }

@@ -12,7 +12,7 @@ const Title = memo(() => {
         <div className="line"></div>
         <h1>Emil Bøen</h1>
         <h4>
-          Hey! I'm a freshly graduated front-end developer.
+          Hey! I'm a freshly graduated front-end developer based in Norway.
           <br /> I always enjoy trying new things and I love coming up with new ideas.
         </h4>
       </div>
