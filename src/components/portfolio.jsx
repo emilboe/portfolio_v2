@@ -2,7 +2,7 @@ import React, { memo } from "react";
 import { Link } from "react-router-dom";
 
 import "../styles/portfolio.scss";
-import tjohei from "../images/tjohei.jpg";
+import tjohei from "../images/Animated_Mockup_v3.gif";
 import hamle from "../images/hamle.jpg";
 import gardenview from "../images/gardenview.png";
 

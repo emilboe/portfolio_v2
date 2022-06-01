@@ -2,7 +2,7 @@ import React, { memo } from "react";
 import { useParams } from "react-router-dom";
 
 import "../styles/projects.scss";
-import tjohei from "../images/Animated_Mockup_v3.gif";
+import tjohei from "../images/tjohei_screenshot.png";
 import hamle from "../images/hamle.jpg";
 import gardenview from "../images/plant_screenshot.png";
 
