@@ -31,6 +31,11 @@ $ruler: 16px;
           justify-content: center;
           align-items: center;
           border-radius: 10px;
+          transition: all .2s;
+          &:hover{
+            box-shadow: -6px -6px 13px $color-whiteStrong, 6px 6px 13px $color-shadowStrong;
+            transform: scale(1.05);
+          }
         }
         .skill-info {
           color: rgb(204, 204, 204);

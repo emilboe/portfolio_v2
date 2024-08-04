@@ -1,12 +1,12 @@
 import React, { memo } from "react";
 import "../styles/about.scss";
-import img from "../images/emilboe.png";
+import img from "../images/profile-pic_3.png";
 
 import {
-  IoPerson,
   IoLocationSharp,
-  IoMailSharp,
-  IoCalendarClearOutline,
+  IoMail,
+  IoLogoLinkedin,
+  IoLogoGithub,
 } from "react-icons/io5";
 
 const About = memo(({ refs }) => {
@@ -15,46 +15,44 @@ const About = memo(({ refs }) => {
       <div className="section-title">ABOUT ME</div>
 
       <div className="about-content">
-        <div className="picture-wrap">
-          <img
-            className="about-picture"
-            src={img}
-            alt="Selfie of Emil."
-          ></img>
+        <div className="picture-section">
+
+          <div className="picture-wrap">
+            <img
+              className="about-picture"
+              src={img}
+              alt="Selfie of Emil."
+            ></img>
+
+          </div>
+          <div className="info-li"><IoLocationSharp className="icon" />Trondheim, Norway</div>
         </div>
         <div className="about-info">
           <b className="info-title">"Me, Myself & I"</b>
           <div className="info">
             <br />
-            I recently graduated with a bachelor's degree in web development from the Norwegian University of Science and Technology.
-            I have always had a passion for creative webdesign and making intuitive, dynamic user experiences.
+            For the past 2 years, I have been working as a tech consultant at TietoEVRY, where I have honed my skills in creative web design and developing intuitive, dynamic user experiences.
             <br /><br />
-            I see myself as a problem solver and creative thinker with high attention to detail.
-            On a personal note I am a fan of Japan, esports, watching netflix and blogging. Also my mom says I'm cool.
+            I see myself as a problem-solver and creative thinker with high attention to detail.
+            On a personal note, I enjoy travelling, reading, and watching esports. Also, my mom says I'm cool.
             <br /><br />
             I strive to challenge myself without the fear of making mistakes.
             Interested in working with the entire frontend spectrum to create useful projects with positive people.
           </div>
           <ul>
             <li>
-              <div className="info-li">
-                <IoPerson className="icon" /> Emil Bøen
-              </div>
+              Find me at:
             </li>
             <li>
-              <div className="info-li">
-                <IoLocationSharp className="icon" /> Gjøvik, Norway
-              </div>
+              <a href="mailto:emil@boen.net" className="info-li"> <IoMail className="icon" /> emil@boen.net</a>
             </li>
             <li>
-              <div className="info-li">
-                <a href="mailto:emil@boen.net"><IoMailSharp className="icon" /> emil@boen.net</a>
-              </div>
+              <a href="https://www.linkedin.com/in/emil-boen/" className="info-li">
+                <IoLogoLinkedin className="icon" /> Emil Bøen</a>
             </li>
             <li>
-              <div className="info-li">
-                <IoCalendarClearOutline className="icon" /> 05.10.1996
-              </div>
+              <a href="https://github.com/emilboe" className="info-li">
+                <IoLogoGithub className="icon" /> emilboe</a>
             </li>
           </ul>
         </div>

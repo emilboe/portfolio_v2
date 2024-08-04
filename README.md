@@ -1,22 +1,21 @@
-# Emil Bøens Portfolio
+# Emil Bøen's Portfolio
 
-**링크** :
-<https://hubblin.github.io/>
-<br/>
-(github를 이용하여 배포하였음)
+**Link**:  
+<https://emilboen.dev/>  
+(Deployed using GitHub)
 
 <br/><br/>
 
-## 개요
+## Overview
 
-- 서비스 : 웹 포트폴리오
-- 개발 환경 : visual code
-- 개발 언어 : javascript
-- 기타 환경 : Git
-- 외부 자원 : react.js, simple icons, react icons
+- **Service**: Web Portfolio
+- **Development Environment**: Visual Studio Code
+- **Development Language**: JavaScript
+- **Other Tools**: Git
+- **External Resources**: React.js, Simple Icons, React Icons
 
 <br/>
 
-## 내용
+## Description
 
-react.js를 이용하여 만든 간단한 자기소개 웹 페이지 입니다.
+This is a simple self-introduction web page created using React.js.
