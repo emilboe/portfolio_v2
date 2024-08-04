@@ -3,8 +3,9 @@ $color-shadow: hsl(240, 4%, 10%);
 $color-shadowStrong: hsl(240, 4%, 5%);
 $color-white: hsl(240, 4%, 15%);
 $color-whiteStrong: hsl(240, 4%, 20%);
-$color-pink: rgb(255, 85, 124, 0.5);
+$color-pink: rgb(255, 85, 124, 1);
 $ruler: 16px;
+
 header {
   width: 100%;
   background-color: $color-bg;
@@ -39,6 +40,7 @@ header {
       font-size: 24px;
       color: white;
       font-weight: bold;
+
       img {
         height: 60px;
         margin-right: 1rem;
@@ -51,34 +53,32 @@ header {
 
       li {
         margin: 0 10px;
+
         button {
+          background-color: inherit;
           transition: all 0.2s ease-in-out;
           overflow: hidden;
-          // background: linear-gradient(315deg, $color-shadow 0%, $color-white 100%);
-          // box-shadow: -4px -4px 13px $color-whiteStrong, 4px 4px 13px $color-shadowStrong;
-          // box-shadow: -4px -4px 13px $color-pink, 4px 4px 13px $color-pink;
-          color: dimgray;
           border: none;
-          border-radius: 50rem;
+          color: white;
           width: 100%;
           height: 100%;
           display: block;
           padding: 8px 19px;
           cursor: pointer;
-          &:hover {
-            box-shadow: -2px -2px 5px $color-pink, 2px 2px 5px $color-shadow;
+          &:hover{
+            color: $color-pink;
           }
         }
       }
     }
   }
+
   .toggleBtn {
     right: 15px;
     font-size: 25px;
     display: none;
     box-shadow: -4px -4px 13px $color-shadow, 4px 4px 13px $color-shadowStrong;
     transition: all 0.2s ease-in-out;
-    border-radius: 10px;
     color: dimgray;
     width: 40px;
     height: 40px;
@@ -136,6 +136,7 @@ header {
 
       border-radius: 10px;
       width: 100%;
+
       li {
         width: 100%;
         box-sizing: border-box;
@@ -145,6 +146,7 @@ header {
         overflow: hidden;
         border-radius: 10px;
         box-shadow: -4px -4px 13px $color-white, 4px 4px 13px $color-shadow;
+
         a {
           color: dimgray;
           text-decoration: none;
@@ -153,6 +155,7 @@ header {
           display: block;
           padding: 20px;
         }
+
         button {
           background-color: $color-shadow;
           color: white;
@@ -161,7 +164,6 @@ header {
           height: 100%;
           display: block;
           box-sizing: border-box;
-          background-color: transition;
           padding: 20px;
           font-size: 30px;
           border-radius: 10px;
