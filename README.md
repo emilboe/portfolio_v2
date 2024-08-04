@@ -2,9 +2,9 @@
 
 **Link**:  
 <https://emilboen.dev/>  
-(Deployed using GitHub)
+(Deployed using Netlify)
 
-<br/><br/>
+<br/>
 
 ## Overview
 
