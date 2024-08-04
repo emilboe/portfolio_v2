@@ -31,7 +31,7 @@ const About = memo(({ refs }) => {
           <b className="info-title">"Me, Myself & I"</b>
           <div className="info">
             <br />
-            For the past 2 years, I have been working as a tech consultant at TietoEVRY, where I have honed my skills in creative web design and developing intuitive, dynamic user experiences.
+            For the past 2 years, I have been working as a consultant at TietoEVRY, where I have honed my skills in creative web design and developing intuitive, dynamic user experiences.
             <br /><br />
             I see myself as a problem-solver and creative thinker with high attention to detail.
             On a personal note, I enjoy travelling, reading, and watching esports. Also, my mom says I'm cool.

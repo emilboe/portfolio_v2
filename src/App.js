@@ -10,9 +10,9 @@ import About from './components/about';
 import Title from './components/title';
 import Skills from './components/skills';
 import Portfolio from './components/portfolio';
-import Footer from './components/footer';
 import Project from './components/project';
 import ScrollToTop from './components/scrollToTop';
+// import Footer from './components/footer';
 
 
 function App() {
@@ -75,7 +75,7 @@ function App() {
         } />
       </Routes>
 
-      <Footer handleScroll={handleScroll} />
+      {/* <Footer handleScroll={handleScroll} /> */}
     </Router>
   );
 }

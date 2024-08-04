@@ -15,7 +15,8 @@ import {
   Mongodb,
   Heroku,
   Netlify,
-  Adobexd
+  Adobexd,
+  Mysql
 } from "@icons-pack/react-simple-icons";
 
 const Skills = memo(({ refs }) => {
@@ -58,7 +59,7 @@ const Skills = memo(({ refs }) => {
           </div>
           <div className="skill-group">
             <div className="skill">
-              <Figma color="white" size={50} />
+              <Figma size={50}  className="figma"/>
             </div>
             <p className="skill-info">Figma</p>
           </div>
@@ -69,7 +70,7 @@ const Skills = memo(({ refs }) => {
             <p className="skill-info">Adobe XD</p>
           </div>
         </div>
-
+        <br></br>
         <h3 className="skill-title">Backend</h3>
         <div className="skills-infos">
           <div className="skill-group">
@@ -109,6 +110,13 @@ const Skills = memo(({ refs }) => {
             </div>
             <p className="skill-info">Netlify</p>
           </div>
+          <div className="skill-group">
+            <div className="skill">
+              <Mysql color="#4479a1" size={50}/>
+            </div>
+            <p className="skill-info">Mysql</p>
+          </div>
+          
         </div>
       </div>
     </section>
