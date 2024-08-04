@@ -2,34 +2,65 @@ $color-shadow: hsl(240, 4%, 10%);
 $color-shadowStrong: hsl(240, 4%, 5%);
 $color-white: hsl(240, 4%, 15%);
 $color-whiteStrong: hsl(240, 4%, 20%);
-$color-pink: rgb(255, 85, 124);
+$color-pink: #ff557c;
 $ruler: 16px;
+
 .portfolio-section {
   .portfolio-content {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 120px;
+
     a {
       text-decoration: none;
+      color: $color-pink;
     }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      width: 95%;
+      transition: all 0.1s ease-in-out;
+      border-radius: 10px;
+      cursor: pointer;
+      text-shadow: none;
+      padding: 10px;
+      background: $color-pink;
+      color: azure;
+
+      &:hover {
+        background: #af1958;
+
+      }
+
+      &:active {
+        box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+      }
+    }
+
+    .buttonGroup {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
     .portfolio-info-area {
       min-height: 200px;
       flex-basis: 50%;
-      padding: 7px;
+      padding: 1rem;
       box-sizing: border-box;
 
       .portfolio-info {
-        background: rgb(11, 11, 11);
-
-        background: #2a2b2d;
-        box-shadow: 20px 20px 60px #181819, -20px -20px 60px #3c3e41;
-        // background: linear-gradient(315deg, $color-shadow 0%, $color-white 100%);
-        // box-shadow: -4px -4px 13px $color-whiteStrong, 4px 4px 13px $color-shadowStrong;
+        background: #37383a;
         height: 100%;
         border-radius: 10px;
         position: relative;
-        padding: 20px;
+        padding: 1.5rem;
         box-sizing: border-box;
+        text-shadow: none;
 
         .picture-area {
           height: 300px;
@@ -50,36 +81,18 @@ $ruler: 16px;
             object-fit: cover;
           }
         }
+
         .title {
           margin: 290px 0 10px 0;
           font-size: 30px;
           font-weight: bold;
-          color: $color-pink;
-        }
-        .contents {
-          line-height: 1.5rem;
           color: white;
         }
 
-        .button {
-          box-shadow: -4px -4px 13px $color-whiteStrong, 4px 4px 13px $color-shadowStrong;
-          transition: all 0.2s ease-in-out;
-          border-radius: 10px;
-          cursor: pointer;
-          text-decoration: none;
-          padding: 10px;
-          margin-top: 20px;
-          margin-right: 10px;
-          display: inline-block;
-          color: azure;
-          font-weight: bold;
-          &:hover {
-            box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
-            color: $color-pink;
-          }
-          &:active {
-            box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
-          }
+        .contents {
+          line-height: 1.5rem;
+          color: rgb(190, 190, 190);
+          text-shadow: none;
         }
       }
     }
