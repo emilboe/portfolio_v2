@@ -36,9 +36,11 @@ $color-pink: rgb(255, 85, 124, 0.5);
       gap: 1rem;
 
       .info-li {
-        justify-self: center;
         display: flex;
-        gap: .5rem;
+        margin-left: -1.5rDem;
+        .icon{
+          padding-right: .5rem;
+        }
       }
     }
 
@@ -79,7 +81,6 @@ $color-pink: rgb(255, 85, 124, 0.5);
         font-weight: 600;
         text-shadow: none;
       }
-
 
       ul {
         padding: 20px 0;
