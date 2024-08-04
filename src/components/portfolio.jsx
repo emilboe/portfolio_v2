@@ -9,7 +9,6 @@ import gardenview from "../images/gardenview.png";
 
 import {
   IoDesktopOutline,
-  IoLogoLinkedin,
   IoLogoGithub,
 } from "react-icons/io5";
 
