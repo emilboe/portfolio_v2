@@ -22,7 +22,7 @@ import {
 const Skills = memo(({ refs }) => {
   return (
     <section ref={refs} className="skills-section">
-      <div className="section-title">SKILLS</div>
+      <div className="section-title">Skills</div>
       <div className="skills-content">
 
         <h3 className="skill-title">Frontend</h3>

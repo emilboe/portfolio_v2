@@ -37,7 +37,7 @@ const Navbar = memo(({ handleScroll, hideButtons }) => {
               </li>
               <li>
                 <button onClick={() => handleScroll("portfolio")}>
-                  Portfolio
+                  Projects
                 </button>
               </li>
             </ul>
@@ -94,7 +94,7 @@ const Navbar = memo(({ handleScroll, hideButtons }) => {
                       click();
                     }}
                   >
-                    Portfolio
+                    Projects
                   </button>
                 </li>
               </ul>

@@ -15,7 +15,7 @@ import {
 const Portfolio = memo(({ refs }) => {
   return (
     <section ref={refs} className="portfolio-section">
-      <div className="section-title">PORTFOLIO</div>
+      <div className="section-title">Projects</div>
       <div className="portfolio-content">
         <div className="portfolio-info-area">
           <div className="portfolio-info">

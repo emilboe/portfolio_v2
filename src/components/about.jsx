@@ -12,7 +12,7 @@ import {
 const About = memo(({ refs }) => {
   return (
     <section ref={refs} className="about-section">
-      <div className="section-title">ABOUT ME</div>
+      {/* <div className="section-title">ABOUT ME</div> */}
 
       <div className="about-content">
         <div className="picture-section">
@@ -28,7 +28,7 @@ const About = memo(({ refs }) => {
           <div className="info-li"><IoLocationSharp className="icon" />Trondheim, Norway</div>
         </div>
         <div className="about-info">
-          <b className="info-title">"Me, Myself & I"</b>
+          {/* <h2 className="info-title">About me</h2> */}
           <div className="info">
             <br />
             For the past 2 years, I have been working as a consultant at TietoEVRY, where I have honed my skills in creative web design and developing intuitive, dynamic user experiences.
