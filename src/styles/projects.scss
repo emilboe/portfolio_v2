@@ -5,6 +5,7 @@ $color-whiteStrong: hsl(240, 4%, 20%);
 $color-pink: rgb(255, 85, 124);
 $color-red: #ae1100;
 $ruler: 16px;
+
 .project-container {
   max-width: 80%;
   margin: 80px auto;
@@ -16,48 +17,63 @@ $ruler: 16px;
   h1 {
     font-size: 3rem;
   }
+
   p,
   img {
     max-width: 80%;
     line-height: 2rem;
     font-size: 1.2rem;
   }
+
+  a {
+    text-decoration: none;
+    color: $color-pink;
+  }
+
   .button-group {
     display: flex;
     gap: 1rem;
   }
+
   .button {
-    box-shadow: -4px -4px 13px $color-whiteStrong, 4px 4px 13px $color-shadowStrong;
-    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    transition: all 0.1s ease-in-out;
     border-radius: 10px;
     cursor: pointer;
-    text-decoration: none;
+    text-shadow: none;
     padding: 10px;
-    margin-right: 10px;
-    display: inline-block;
+    background: $color-pink;
     color: azure;
-    font-weight: bold;
+
     &:hover {
-      box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
-      color: $color-pink;
+      background: #af1958;
+
     }
+
     &:active {
       box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
     }
   }
+
   .cover-image {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .tech-stack {
     display: flex;
     gap: 1rem;
   }
+
   .skills-infos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
     .skill-group {
       .skill {
         background: rgb(11, 11, 11);
@@ -72,6 +88,7 @@ $ruler: 16px;
         align-items: center;
         border-radius: 10px;
       }
+
       .skill-info {
         color: rgb(204, 204, 204);
         text-align: center;

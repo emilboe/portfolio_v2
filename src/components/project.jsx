@@ -19,6 +19,12 @@ import {
     Mongodb
 } from "@icons-pack/react-simple-icons";
 
+import {
+    IoDesktopOutline,
+    IoLogoGithub,
+    IoPhonePortraitSharp
+} from "react-icons/io5";
+
 const Project = memo(({ handlescroll }) => {
     let h1, h2, info, improvement;
     const { id } = useParams();
@@ -56,21 +62,39 @@ const Project = memo(({ handlescroll }) => {
             <div className="button-group">
                 {id === "hamle" &&
                     <>
-                        <a className="button" target="_blank" rel="noreferrer" href="https://hamle.netlify.app/">live site</a>
-                        <a className="button" target="_blank" rel="noreferrer" href="https://github.com/emilboe/hamle">github repo</a>
+                        <a className="button" target="_blank" rel="noreferrer" href="https://hamle.netlify.app/">
+                            <IoDesktopOutline color="white" size={25} />
+                            View Live Site
+                        </a>
+                        <a className="button" target="_blank" rel="noreferrer" href="https://github.com/emilboe/hamle">
+                            <IoLogoGithub color="white" size={25} />
+                            View Code
+                        </a>
                     </>
                 }
                 {id === "gardenview" &&
                     <>
-                        <a className="button" target="_blank" rel="noreferrer" href="https://github.com/emilboe/GardenView-Frontend">github repo</a>
-                        <a className="button" target="_blank" rel="noreferrer" href="https://gardenview.netlify.app/#/about">live site</a>
+                        <a className="button" target="_blank" rel="noreferrer" href="https://gardenview.netlify.app/#/about">
+                            <IoLogoGithub color="white" size={25} />
+                            View Live Site
+                        </a>
+                        <a className="button" target="_blank" rel="noreferrer" href="https://github.com/emilboe/GardenView-Frontend">
+                            <IoDesktopOutline color="white" size={25} />
+                            View Code
+                        </a>
                     </>
                 }
 
                 {id === "tjohei" &&
                     <>
-                        <a className="button" target="_blank" rel="noreferrer" href="https://xd.adobe.com/view/e9b00e11-e810-41ed-5c66-83d405e985c7-9f81/?fullscreen">clickable prototype (Desktop)</a>
-                        <a className="button" target="_blank" rel="noreferrer" href="https://xd.adobe.com/view/1fcae14f-0da4-40a6-6f91-5b7f4b4de3ac-69fb/screen/425e0014-5839-4e29-b72c-4a1f5ee18ad1/?fullscreen">clickable prototype (Mobile)</a>
+                        <a className="button" target="_blank" rel="noreferrer" href="https://xd.adobe.com/view/e9b00e11-e810-41ed-5c66-83d405e985c7-9f81/?fullscreen">
+                            <IoDesktopOutline color="white" size={25} />
+                            Clickable Prototype (Desktop)
+                        </a>
+                        <a className="button" target="_blank" rel="noreferrer" href="https://xd.adobe.com/view/1fcae14f-0da4-40a6-6f91-5b7f4b4de3ac-69fb/screen/425e0014-5839-4e29-b72c-4a1f5ee18ad1/?fullscreen">
+                            <IoPhonePortraitSharp color="white" size={25} />
+                            Clickable Prototype (Mobile)
+                        </a>
                     </>
                 }
 
