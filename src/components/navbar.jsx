@@ -2,7 +2,7 @@ import React, { useCallback, useState, memo } from "react";
 import { Link } from "react-router-dom";
 import "../styles/navbar.scss";
 
-import { MdMenu, MdArrowBack, MdArrowBackIos  } from "react-icons/md";
+import { MdMenu, MdArrowBackIos  } from "react-icons/md";
 import logo from "../images/eb.png";
 
 const Navbar = memo(({ handleScroll, hideButtons }) => {
