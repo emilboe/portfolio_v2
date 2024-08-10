@@ -44,11 +44,16 @@ const About = memo(({ refs }) => {
               Find me at:
             </li>
             <li>
-              <a href="mailto:emil@boen.net" className="info-li"> <IoMail className="icon" /> emil@boen.net</a>
+              <a href="mailto:emil@boen.net" className="info-li">
+                <IoMail className="icon" />
+                emil@boen.net
+              </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/emil-boen/" className="info-li">
-                <IoLogoLinkedin className="icon" /> Emil Bøen</a>
+                <IoLogoLinkedin className="icon" />
+                Emil Bøen
+              </a>
             </li>
             <li>
               <a href="https://github.com/emilboe" className="info-li">

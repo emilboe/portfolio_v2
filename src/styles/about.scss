@@ -19,14 +19,12 @@ $color-lightgray: rgb(139, 139, 139);
 }
 
 .about-section {
-  padding-top: 30px;
-
   margin-bottom: 40px;
 
   .about-content {
     display: flex;
-    gap: 1rem;
-    margin: 2rem;
+    gap: 2rem;
+    margin: 0 1.5rem;
 
     .picture-section {
       display: flex;
@@ -46,7 +44,6 @@ $color-lightgray: rgb(139, 139, 139);
 
     .about-picture {
       box-sizing: border-box;
-      max-width: 400px;
       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
       //margin: 2rem;
       width: 100%;
@@ -106,7 +103,6 @@ $color-lightgray: rgb(139, 139, 139);
           .info-li {
             display: flex;
             gap: 1rem;
-            width: 40%;
 
             .icon {
               font-size: 20px;
@@ -127,6 +123,7 @@ $color-lightgray: rgb(139, 139, 139);
     .about-content {
       flex-wrap: wrap;
       justify-content: center;
+      margin: 2rem;
 
       .about-picture {
         height: 125%;
