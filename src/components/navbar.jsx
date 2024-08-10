@@ -2,7 +2,7 @@ import React, { useCallback, useState, memo } from "react";
 import { Link } from "react-router-dom";
 import "../styles/navbar.scss";
 
-import { MdMenu } from "react-icons/md";
+import { MdMenu, MdArrowBack, MdArrowBackIos  } from "react-icons/md";
 import logo from "../images/eb.png";
 
 const Navbar = memo(({ handleScroll, hideButtons }) => {
@@ -24,7 +24,12 @@ const Navbar = memo(({ handleScroll, hideButtons }) => {
           {hideButtons ?
             <ul className="navbar__menu">
               <li>
-                <Link to="/"><button>Go Back</button></Link>
+                <Link to="/">
+                  <button>
+                    <MdArrowBackIos /> 
+                    Go Back
+                  </button>
+                </Link>
               </li>
             </ul>
             :
