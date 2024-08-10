@@ -75,6 +75,9 @@ $ruler: 16px;
     justify-content: center;
 
     .skill-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       .skill {
         background: rgb(11, 11, 11);
         background: linear-gradient(315deg, $color-shadow 0%, $color-white 100%);
@@ -87,6 +90,12 @@ $ruler: 16px;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
+        transition: all .2s;
+
+        &:hover {
+          box-shadow: -6px -6px 13px $color-whiteStrong, 6px 6px 13px $color-shadowStrong;
+          transform: scale(1.05);
+        }
       }
 
       .skill-info {
