@@ -3,7 +3,9 @@ $color-shadow: #babecc;
 $color-white: #fff;
 $color-black: rgb(0, 0, 0);
 $color-red: #ae1100;
+$color-pink: rgb(255, 85, 124, 1);
 $ruler: 16px;
+
 * {
   margin: 0;
   padding: 0;
@@ -53,4 +55,31 @@ ul {
   font-weight: bolder;
   text-align: center;
   margin-bottom: 50px;
+}
+a{
+  text-decoration: none;
+}
+.returnFooter{
+  background-color: rgba(0, 0, 0, 0.267);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 8px 19px;
+  cursor: pointer;
+  &:hover{
+    color: $color-pink;
+  }
 }

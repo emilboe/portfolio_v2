@@ -2,7 +2,8 @@ import React, { useRef } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  Link
 } from "react-router-dom";
 import './App.scss';
 import Navbar from './components/navbar';
@@ -13,6 +14,8 @@ import Portfolio from './components/portfolio';
 import Project from './components/project';
 import ScrollToTop from './components/scrollToTop';
 // import Footer from './components/footer';
+
+import { MdArrowBackIos  } from "react-icons/md";
 
 
 function App() {
@@ -59,6 +62,12 @@ function App() {
             <ScrollToTop />
             <Navbar hideButtons={true} handleScroll={handleScroll} />
             <Project handleScroll={handleScroll} />
+            <Link to="/" className='returnFooter'> 
+              <button>
+                <MdArrowBackIos />
+                Go Back
+              </button>
+            </Link>
           </>
         } />
 
